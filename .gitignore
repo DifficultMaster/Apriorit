@@ -13,6 +13,7 @@ CMakeUserPresets.json
 .vs
 .git
 out
+.cmake-intellisense-check
 
 # CLion
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
