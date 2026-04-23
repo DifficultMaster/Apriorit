@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package apriorit5.network;
+
+service FileTransferService
+{
+	rpc UploadFile (stream UploadFileRequest) returns (UploadFileResponse);
+}
+
+message UploadFileRequestMetadata
+{
+	string filename = 1;
+}
+
+message UploadFileRequestData
+{
+	bytes data = 1;
+}
+
+message UploadFileRequest
+{
+	oneof request
+	{
+		UploadFileRequestMetadata metadata = 1;
+		UploadFileRequestData data = 2;
+	}
+}
+
+message UploadFileResponse
+{
+	bool success = 1;
+	string message = 2;
+}
