@@ -1,9 +1,9 @@
-# Apriorit3 — Singly Linked List Exercise (C++23, CMake)
+# Apriorit3 — Singly Linked List Exercise (C++23, CMake, MSVC v145 (VS 2026))
 
 This repository contains a small C++23 data-structure exercise focused on implementing a custom forward singly linked list.
 
 It currently builds one console application:
-- **Apriorit7** — runs a simple manual smoke demo from `src/main.cpp`.
+- **Apriorit7** — runs a simple manual demo from `src/main.cpp`.
 
 The list implementation is located in `include/apriorit7/core/linked_list.hpp`.
 
